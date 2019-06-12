@@ -1,14 +1,12 @@
 package tasks;
 
-public class Map {
-    public static void main(String args[]) {
-    }
+import java.nio.charset.StandardCharsets;
 
-    byte[] mapChanger(String s) throws Exception {
-        byte arr[] = s.getBytes("UTF8");
+public class Map {
+    void mapChanger(String s) throws Exception {
+        byte arr[] = s.getBytes(StandardCharsets.UTF_8);
         for (byte x : arr) {
             System.out.print(x + " ");
         }
-        return arr;
     }
 }
