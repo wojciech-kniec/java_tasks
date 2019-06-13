@@ -6,6 +6,6 @@ public class App {
 //        map.mapChanger(".");
 
         ArrayTask arrayTask = new ArrayTask();
-        arrayTask.index4( new int[]{3,2,2,5,6,4,1,2,8,-10},3);
+        arrayTask.index4( new int[]{-25,-6,65,-123,1},4);
     }
 }
