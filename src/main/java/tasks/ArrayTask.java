@@ -15,7 +15,7 @@ public class ArrayTask {
 
     public void userSorting() {
         List<User> userStream = users.stream()
-                .sorted(Comparator.comparingInt(User::getAge))
+                .sorted(Comparator.comparing(User::getName))
                 .collect(Collectors.toList());
         userStream.forEach(System.out::println);
     }
