@@ -7,8 +7,8 @@ public class ArrayTask {
 
     HashMap hashMap;
 
-    public static String ordinal(int index) {
-        return index % 100 == 11 || index % 100 == 12 || index % 100 == 13 ? index + "th" : index + new String[]{"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"}[index % 10];
+    public static String ordinal(int numeber) {
+        return numeber % 100 == 11 || numeber % 100 == 12 || numeber % 100 == 13 ? numeber + "th" : numeber + new String[]{"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"}[numeber % 10];
     }
 
     public void index4(int[] array, int index) {
