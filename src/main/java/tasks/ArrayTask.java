@@ -15,13 +15,30 @@ public class ArrayTask {
             new User("B", 40),
             new User("E", 50));
 
-    public void userAgeMeanCalculating(){
+    static int[] intArray = {
+            1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, -1472, 2365, 1456, 2165, 1457, 2456
+    };
+
+    static String[] stringArray = {
+            "VW", "Volvo", "BMW", "Audi", "Mazda", "Mitsubishi", "Tata", "Mercedes-Benz", "Porsche"
+    };
+
+    public void sortArray() {
+        System.out.println("Unsorted intArray: " + Arrays.toString(intArray));
+        Arrays.sort(intArray);
+        System.out.println("Sorted intArray: " + Arrays.toString(intArray));
+        System.out.println("Unsorted stringArray: " + Arrays.toString(stringArray));
+        Arrays.sort(stringArray);
+        System.out.println("Sorted stringArray: " +Arrays.toString(stringArray));
+    }
+
+    public void userAgeMeanCalculating() {
         double mean = users.stream()
                 .map(User::getAge)
-                .mapToInt(i->i)
+                .mapToInt(i -> i)
                 .average()
                 .orElse(Double.NaN);
-        System.out.println(mean);
+        System.out.println("Mean of users age is: " + mean);
     }
 
     public void userSorting() {
@@ -46,8 +63,8 @@ public class ArrayTask {
     protected void stringEquals(String s2, String s3) {
         boolean equals = s2.equals(s3);
         if (equals) {
-            System.out.println("word: " +s2+ " and "+s3+" are identical.");
-        } else System.out.println("Both words are different.");
+            System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are identical.");
+        } else System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are different.");
     }
 
     void mapTasks() {
@@ -57,9 +74,9 @@ public class ArrayTask {
         peopleMapping.put("Angie", 33);
 
         System.out.println(peopleMapping);
-        for (String i : peopleMapping.keySet()) {
-            System.out.println("key: " + i + " value: " + peopleMapping.get(i));
-        }
+//        for (String i : peopleMapping.keySet()) {
+//            System.out.println("key: " + i + " value: " + peopleMapping.get(i));
+//        }
         peopleMapping.forEach((key, value) -> System.out.println(key + " = " + value));
 
     }

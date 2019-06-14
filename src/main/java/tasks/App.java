@@ -17,5 +17,7 @@ public class App {
         arrayTask.saltGenerated();
         System.out.println("---------------------------------------------------");
         arrayTask.userAgeMeanCalculating();
+        System.out.println("---------------------------------------------------");
+        arrayTask.sortArray();
     }
 }
