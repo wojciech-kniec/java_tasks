@@ -1,8 +1,10 @@
 package tasks;
 
-import java.io.UnsupportedEncodingException;
-import java.util.*;
-import java.util.Map;
+import java.security.SecureRandom;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class ArrayTask {
@@ -12,6 +14,15 @@ public class ArrayTask {
             new User("A", 10),
             new User("B", 40),
             new User("E", 50));
+
+    public void userAgeMeanCalculating(){
+        double mean = users.stream()
+                .map(User::getAge)
+                .mapToInt(i->i)
+                .average()
+                .orElse(Double.NaN);
+        System.out.println(mean);
+    }
 
     public void userSorting() {
         List<User> userStream = users.stream()
@@ -32,15 +43,15 @@ public class ArrayTask {
 
     }
 
-    public void stringEquals(String s2, String s3) {
+    protected void stringEquals(String s2, String s3) {
         boolean equals = s2.equals(s3);
         if (equals) {
-            System.out.println("Both words are identical.");
+            System.out.println("word: " +s2+ " and "+s3+" are identical.");
         } else System.out.println("Both words are different.");
     }
 
-    public void mapTasks() throws UnsupportedEncodingException {
-        HashMap<String, Integer> peopleMapping = new HashMap<String, Integer>();
+    void mapTasks() {
+        HashMap<String, Integer> peopleMapping = new HashMap<>();
         peopleMapping.put("John", 32);
         peopleMapping.put("Steve", 30);
         peopleMapping.put("Angie", 33);
@@ -49,7 +60,21 @@ public class ArrayTask {
         for (String i : peopleMapping.keySet()) {
             System.out.println("key: " + i + " value: " + peopleMapping.get(i));
         }
+        peopleMapping.forEach((key, value) -> System.out.println(key + " = " + value));
 
     }
+
+    private byte[] generateSalt() {
+        SecureRandom random = new SecureRandom();
+        byte bytes[] = new byte[20];
+        random.nextBytes(bytes);
+        return bytes;
+    }
+
+    void saltGenerated() {
+        String a = Arrays.toString(generateSalt());
+        System.out.println(a);
+    }
+
 
 }
