@@ -23,16 +23,25 @@ public class ArrayTask {
             "VW", "Volvo", "BMW", "Audi", "Mazda", "Mitsubishi", "Tata", "Mercedes-Benz", "Porsche"
     };
 
-    public void sortArray() {
+    void ifArrayCointainsValue(int[] array, int item) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == item) {
+                System.out.println("Item: " + item + "is inside an array " + Arrays.asList(array));
+            } else System.out.println("Item: " + item + "isn't inside an array " + Arrays.asList(array));
+        }
+
+    }
+
+    void sortArray() {
         System.out.println("Unsorted intArray: " + Arrays.toString(intArray));
         Arrays.sort(intArray);
         System.out.println("Sorted intArray: " + Arrays.toString(intArray));
         System.out.println("Unsorted stringArray: " + Arrays.toString(stringArray));
         Arrays.sort(stringArray);
-        System.out.println("Sorted stringArray: " +Arrays.toString(stringArray));
+        System.out.println("Sorted stringArray: " + Arrays.toString(stringArray));
     }
 
-    public void userAgeMeanCalculating() {
+    void userAgeMeanCalculating() {
         double mean = users.stream()
                 .map(User::getAge)
                 .mapToInt(i -> i)
@@ -41,7 +50,7 @@ public class ArrayTask {
         System.out.println("Mean of users age is: " + mean);
     }
 
-    public void userSorting() {
+    void userSorting() {
         List<User> userStream = users.stream()
                 .sorted(Comparator.comparing(User::getName))
                 .collect(Collectors.toList());
@@ -52,7 +61,7 @@ public class ArrayTask {
         return numeber % 100 == 11 || numeber % 100 == 12 || numeber % 100 == 13 ? numeber + "th" : numeber + new String[]{"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"}[numeber % 10];
     }
 
-    public void index4(int[] array, int index) {
+    void index4(int[] array, int index) {
         int i = Arrays.asList(array).indexOf(index);
         String arr2 = Arrays.toString(array);
         System.out.println("Here is an array " + arr2);
@@ -60,7 +69,7 @@ public class ArrayTask {
 
     }
 
-    protected void stringEquals(String s2, String s3) {
+    void stringEquals(String s2, String s3) {
         boolean equals = s2.equals(s3);
         if (equals) {
             System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are identical.");

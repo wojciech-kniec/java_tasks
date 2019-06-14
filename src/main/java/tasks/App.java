@@ -19,5 +19,7 @@ public class App {
         arrayTask.userAgeMeanCalculating();
         System.out.println("---------------------------------------------------");
         arrayTask.sortArray();
+        System.out.println("---------------------------------------------------");
+        arrayTask.ifArrayCointainsValue(new int[]{1,2,3,4,5},2);
     }
 }
