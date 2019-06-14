@@ -6,6 +6,8 @@ public class App {
 //        map.mapChanger(".");
 
         ArrayTask arrayTask = new ArrayTask();
-        arrayTask.index4( new int[]{-25,-6,65,-123,1},4);
+        arrayTask.index4( new int[]{-25,-6,65,-123,1},3);
+        arrayTask.userSorting();
+        arrayTask.stringEquals("sometext2","sometext2");
     }
 }

@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 public class ArrayTask {
     static List<User> users = Arrays.asList(
             new User("C", 30),
-            new User("D", 40),
+            new User("A", 35),
             new User("A", 10),
-            new User("B", 20),
+            new User("B", 40),
             new User("E", 50));
 
     public void userSorting() {
@@ -30,8 +30,12 @@ public class ArrayTask {
         System.out.println("Here is an array " + arr2);
         System.out.println("This is a " + ordinal(index) + " index of an array and an element of this index is " + array[index] + ". Array length is " + array.length);
 
-        for (int i2 : array) {
-            System.out.println(i2);
-        }
+    }
+
+    public void stringEquals(String s2, String s3) {
+        boolean equals = s2.equals(s3);
+        if (equals) {
+            System.out.println("Both words are identical.");
+        } else System.out.println("Both words are different.");
     }
 }
