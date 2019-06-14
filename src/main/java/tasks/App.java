@@ -9,5 +9,6 @@ public class App {
         arrayTask.index4( new int[]{-25,-6,65,-123,1},3);
         arrayTask.userSorting();
         arrayTask.stringEquals("sometext2","sometext2");
+        arrayTask.mapTasks();
     }
 }

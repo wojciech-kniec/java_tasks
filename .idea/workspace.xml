@@ -7,6 +7,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/tasks/ArrayTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tasks/ArrayTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/tasks/ArrayTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/ArrayTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tasks/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/tasks/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tasks/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tasks/AppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,13 +49,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1563" />
+          <entry key="java" value="1756" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1563" />
+          <entry key="JAVA" value="1756" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -60,22 +63,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tasks/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tasks/ArrayTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="549">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1585#1602#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/main/java/tasks/Map.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tasks/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tasks/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/tasks/ArrayTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tasks/App.java" />
       </list>
     </option>
   </component>
@@ -278,12 +282,12 @@
       <updated>1560347788637</updated>
       <workItem from="1560347792826" duration="5146000" />
       <workItem from="1560422347673" duration="8580000" />
-      <workItem from="1560517565998" duration="3948000" />
+      <workItem from="1560517565998" duration="4607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17674000" />
+    <option name="totallyTimeSpent" value="18333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -366,13 +370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tasks/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tasks/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -382,11 +379,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tasks/ArrayTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="549">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1585#1602#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tasks/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
