@@ -1,9 +1,8 @@
 package tasks;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import java.io.UnsupportedEncodingException;
+import java.util.*;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ArrayTask {
@@ -40,16 +39,17 @@ public class ArrayTask {
         } else System.out.println("Both words are different.");
     }
 
-    public void mapTasks(){
+    public void mapTasks() throws UnsupportedEncodingException {
         HashMap<String, Integer> peopleMapping = new HashMap<String, Integer>();
         peopleMapping.put("John", 32);
         peopleMapping.put("Steve", 30);
         peopleMapping.put("Angie", 33);
 
-
         System.out.println(peopleMapping);
-        for (String i : peopleMapping.keySet()){
-            System.out.println("key: " + i + " value: " + peopleMapping.get(i) );
+        for (String i : peopleMapping.keySet()) {
+            System.out.println("key: " + i + " value: " + peopleMapping.get(i));
         }
+
     }
+
 }
