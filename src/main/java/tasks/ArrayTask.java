@@ -1,10 +1,7 @@
 package tasks;
 
 import java.security.SecureRandom;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ArrayTask {
@@ -61,19 +58,19 @@ public class ArrayTask {
         return numeber % 100 == 11 || numeber % 100 == 12 || numeber % 100 == 13 ? numeber + "th" : numeber + new String[]{"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"}[numeber % 10];
     }
 
+    void stringEquals(String s2, String s3) {
+        boolean equals = s2.equals(s3);
+        if (equals) {
+            System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are identical.");
+        } else System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are different.");
+    }
+
     void index4(int[] array, int index) {
         int i = Arrays.asList(array).indexOf(index);
         String arr2 = Arrays.toString(array);
         System.out.println("Here is an array " + arr2);
         System.out.println("This is a " + ordinal(index) + " index of an array and an element of this index is " + array[index] + ". Array length is " + array.length);
 
-    }
-
-    void stringEquals(String s2, String s3) {
-        boolean equals = s2.equals(s3);
-        if (equals) {
-            System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are identical.");
-        } else System.out.println("1st word: " + s2 + " and 2nd word: " + s3 + " are different.");
     }
 
     void mapTasks() {
@@ -86,8 +83,9 @@ public class ArrayTask {
 //        for (String i : peopleMapping.keySet()) {
 //            System.out.println("key: " + i + " value: " + peopleMapping.get(i));
 //        }
-        peopleMapping.forEach((key, value) -> System.out.println(key + " = " + value));
-
+        peopleMapping.forEach((key, value) -> {
+            System.out.println(key + " = " + value);
+        });
     }
 
     private byte[] generateSalt() {
@@ -102,5 +100,24 @@ public class ArrayTask {
         System.out.println(a);
     }
 
+    void countWords() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the string: ");
+        String str = in.nextLine();
+        System.out.print("Number of words in the string: " + counterWords(str) + "\n");
+    }
+
+    public static int counterWords(String str) {
+        int count = 0;
+        if (!(" ".equals(str.substring(0, 1))) || !(" ".equals(str.substring(str.length() - 1)))) {
+            for (int i = 0; i < str.length(); i++) {
+                if (str.charAt(i) == ' ') {
+                    count++;
+                }
+            }
+            count = count + 1;
+        }
+        return count; // returns 0 if string starts or ends with space " ".
+    }
 
 }
