@@ -10,4 +10,7 @@ public class Map {
             System.out.print(x + " ");
         }
     }
+
+    public interface Entry<T, T1> {
+    }
 }
