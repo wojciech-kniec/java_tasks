@@ -135,4 +135,13 @@ public class ArrayTask {
             System.out.println(entry.getKey() + "=>" + entry.getValue());
         }
     }
+
+    void checkIfValueContains() {
+        String s2 = treeMap();
+        Scanner in2 = new Scanner(System.in);
+        String str2 = in2.nextLine();
+        if (tree_map().containsKey(str2)) {
+            System.out.println("key: " + str2 + " contains");
+        }
+    }
 }
