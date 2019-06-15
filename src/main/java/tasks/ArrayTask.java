@@ -117,7 +117,7 @@ public class ArrayTask {
             }
             count = count + 1;
         }
-        return count; // returns 0 if string starts or ends with space " ".
+        return count;
     }
 
 }
