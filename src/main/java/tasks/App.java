@@ -20,8 +20,8 @@ public class App {
         System.out.println("---------------------------------------------------");
         arrayTask.sortArray();
         System.out.println("---------------------------------------------------");
-        arrayTask.ifArrayCointainsValue(new int[]{1,2,3,4,5},2);
-        arrayTask.ifArrayCointainsValue(new int[]{1,2,3,4,5},6);
+        arrayTask.ifArrayCointainsValue(new int[]{1, 2, 3, 4, 5}, 2);
+        arrayTask.ifArrayCointainsValue(new int[]{1, 2, 3, 4, 5}, 6);
         System.out.println("---------------------------------------------------");
         arrayTask.countWords();
     }

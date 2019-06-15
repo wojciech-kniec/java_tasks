@@ -12,6 +12,7 @@ public class ArrayTask {
             new User("B", 40),
             new User("E", 50));
 
+
     static int[] intArray = {
             1789, 2035, 1899, 1456, 2013, 1458, 2458, 1254, -1472, 2365, 1456, 2165, 1457, 2456
     };
@@ -54,7 +55,7 @@ public class ArrayTask {
         userStream.forEach(System.out::println);
     }
 
-    String ordinal(int numeber) {
+    private String ordinal(int numeber) {
         return numeber % 100 == 11 || numeber % 100 == 12 || numeber % 100 == 13 ? numeber + "th" : numeber + new String[]{"th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th"}[numeber % 10];
     }
 
@@ -107,7 +108,7 @@ public class ArrayTask {
         System.out.print("Number of words in the string: " + counterWords(str) + "\n");
     }
 
-    public static int counterWords(String str) {
+    private static int counterWords(String str) {
         int count = 0;
         if (!(" ".equals(str.substring(0, 1))) || !(" ".equals(str.substring(str.length() - 1)))) {
             for (int i = 0; i < str.length(); i++) {
