@@ -25,11 +25,11 @@ public class ArrayTask {
 
     void ifArrayCointainsValue(int[] array, int item) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == item) {
-                System.out.println("Item: " + item + "is inside an array " + Arrays.asList(array));
-            } else System.out.println("Item: " + item + "isn't inside an array " + Arrays.asList(array));
+            if (item == array[i]) {
+                System.out.println("Item: " + item + " is inside an array " + Arrays.toString(array));
+            }
         }
-
+        System.out.println("Item: " + item + " isn't inside an array " + Arrays.toString(array));
     }
 
     void sortArray() {
